@@ -1,5 +1,6 @@
 def calculate_price(price, tax):
     print("Calculating final price...")
-    total = price + (price * tax)
+    tax_amount = price * tax
     print(f"Total price is: {total}")
-    return total
+    total = price + tax_amount
+    return round(total, 2)
