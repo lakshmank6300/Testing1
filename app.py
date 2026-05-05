@@ -1,2 +1,3 @@
-def calculate_price(price, tax):
-    return price + (price * tax)
+def calculate_price(price, tax,discount):
+    total = price + (price * tax)
+    return total - discount
